@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxApart - Appartements Meublés de Prestige</title>
+    
+    <!-- Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-building-fill me-2"></i>
+                <span class="fw-bold">LuxApart</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apartments">Appartements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3 ms-2" href="#contact">Réserver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100"><br><br>
+            <div class="row h-100 align-items-center"><br>
+                <div class="col-lg-8 text-white"><br>
+                    <h1 class="hero-title mb-4 animate-fade-up">
+                        Vivez l'Excellence<br>
+                        <span class="text-primary">dans nos Appartements de Prestige</span>
+                    </h1>
+                    <p class="hero-subtitle mb-5 animate-fade-up-delay">
+                        Découvrez notre sélection d'appartements meublés haut de gamme, 
+                        situés dans les plus beaux quartiers de la ville.
+                    </p>
+                    <div class="hero-buttons animate-fade-up-delay-2">
+                        <a href="#apartments" class="btn btn-primary btn-lg me-3">
+                            <i class="bi bi-search me-2"></i>Découvrir nos appartements
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-telephone me-2"></i>Nous contacter
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-stats-card animate-fade-left">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="stat-item text-center">
+                                    <h3 class="stat-number">150+</h3>
+                                    <p class="stat-label">Appartements</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item text-center">
+                                    <h3 class="stat-number">98%</h3>
+                                    <p class="stat-label">Satisfaction</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item text-center">
+                                    <h3 class="stat-number">24/7</h3>
+                                    <p class="stat-label">Support</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item text-center">
+                                    <h3 class="stat-number">5★</h3>
+                                    <p class="stat-label">Évaluation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Pourquoi choisir LuxApart ?</h2>
+                    <p class="section-subtitle">
+                        Une expérience de location unique avec des services premium
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-fill-check"></i>
+                        </div>
+                        <h4>Sécurité Garantie</h4>
+                        <p>Tous nos appartements sont surveillés par un gardien.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon">
+                            <i class="bi bi-wifi"></i>
+                        </div>
+                        <h4>Connectivité Premium</h4>
+                        <p>Internet haut débit inclus dans tous nos logements pour votre confort et productivité.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>Support 24/7</h4>
+                        <p>Notre équipe est disponible à tout moment pour répondre à vos besoins et questions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartments Section -->
+    <section id="apartments" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Nos Appartements de Prestige</h2>
+                    <p class="section-subtitle">
+                        Découvrez notre collection d'appartements meublés avec goût, 
+                        dans une belle maison située à Fidjrossè, Cotonou.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="filter-buttons text-center">
+                        <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">Tous</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="2pieces">1 chambre + 1 salon</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="3pieces">2 chambres + 1 salon</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="apartmentsGrid">
+
+
+
+                <!-- Appartement 3 pièces -->
+                <div class="col-lg-4 col-md-6 apartment-card" data-category="3pieces">
+                    <div class="apartment-item">
+                        <div class="apartment-image">
+                            <img src="public\pictures\1.jpg" alt="3 Pièces familial">
+                            <div class="apartment-overlay">
+
+                                <div class="apartment-actions">
+                                    <button class="btn btn-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-apartment="3pieces1">
+                                        <i class="bi bi-images"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-apartment="3 Pièces Familial - Saint-Germain">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apartment-content">
+                            <div class="apartment-header">
+                                <h4>2 chambres et 1 salon</h4>
+                                <div class="apartment-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="apartment-location">
+                                <i class="bi bi-geo-alt me-1"></i>
+                                Fidjrossè Qt nom de la zone, Cotonou
+                            </div>
+                            <div class="apartment-features">
+                                <span class="feature"><i class="bi bi-house me-1"></i>75m²</span>
+                                <span class="feature"><i class="bi bi-wifi me-1"></i>WiFi</span>
+                                <span class="feature"><i class="bi bi-car-front me-1"></i>Garage</span>
+                            </div>
+                            <div class="apartment-amenities">
+                                <span class="amenity">2 chambres</span>
+                                <span class="amenity">1 salon</span>
+                                <span class="amenity">1 douche</span>
+                            </div>
+                            <div class="apartment-footer">
+                                <div class="apartment-price">
+                                    <span class="price">10 000 fcfa</span>
+                                    <span class="period">/jour</span>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-apartment="3 Pièces Familial - Saint-Germain" data-price="2500">
+                                    Réserver
+                                </button>
+                            </div><br>
+                            <!-- Bannière de promotion simple -->
+                            <div class="promotion-banner-simple">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class="promotion-text-simple">
+                                                    <i class="bi bi-gift me-2"></i>
+                                                    <strong>PROMOTION -30%</strong> jusqu'au 15 octobre sur tous nos appartements !
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 apartment-card" data-category="2pieces">
+                    <div class="apartment-item">
+                        <div class="apartment-image">
+                            <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg" alt="2 pièces moderne">
+                            <div class="apartment-overlay">
+                                <div class="apartment-badges">
+                                    <span class="badge bg-success">Écologique</span>
+                                </div>
+                                <div class="apartment-actions">
+                                    <button class="btn btn-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-apartment="2pieces2">
+                                        <i class="bi bi-images"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#bookingModal" data-apartment="2 Pièces Moderne - Bastille">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apartment-content">
+                            <div class="apartment-header">
+                                <h4>2 Pièces Moderne - Bastille</h4>
+                                <div class="apartment-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="apartment-location">
+                                <i class="bi bi-geo-alt me-1"></i>
+                                Fidjrossè Qt nom de la zone, Cotonou
+                            </div>
+                            <div class="apartment-features">
+                                <span class="feature"><i class="bi bi-house me-1"></i>48m²</span>
+                                <span class="feature"><i class="bi bi-wifi me-1"></i>WiFi</span>
+                                <span class="feature"><i class="bi bi-leaf me-1"></i>Éco</span>
+                            </div>
+                            <div class="apartment-amenities">
+                                <span class="amenity">Jardin partagé</span>
+                                <span class="amenity">Énergie verte</span>
+                                <span class="amenity">Compost</span>
+                            </div>
+                            <div class="apartment-footer">
+                                <div class="apartment-price">
+                                    <span class="price">10 000 fcfa</span>
+                                    <span class="period">/jour</span>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-apartment="2 Pièces Moderne - Bastille" data-price="1600">
+                                    Réserver
+                                </button>
+                            </div><br>
+                            <!-- Bannière de promotion simple -->
+                            <div class="promotion-banner-simple">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class="promotion-text-simple">
+                                                    <i class="bi bi-gift me-2"></i>
+                                                    <strong>PROMOTION -30%</strong> jusqu'au 15 octobre sur tous nos appartements !
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Contactez-nous</h2>
+                    <p class="section-subtitle">
+                        Notre équipe est là pour vous accompagner dans votre recherche
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <h5>Téléphone</h5>
+                        <p>+229 01 00 00 00 00</p>
+                        <p class="text-muted">Lun-Dim 24h/24<br></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>contact@luxapart.com</p>
+                        <p class="text-muted">Réponse sous 2h<br>7j/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h5>Adresse</h5>
+                        <p>123 Fidjrossè<br>Cotonou</p>
+                        <p class="text-muted">Nom de rue<br>Num de rue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="footer-brand mb-4">
+                        <i class="bi bi-building-fill me-2"></i>
+                        <span class="fw-bold fs-4">LuxApart</span>
+                    </div>
+                    <p class="text-muted">
+                        Votre partenaire de confiance pour des appartements meublés de prestige à Cotonou.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted text-decoration-none">Accueil</a></li>
+                        <li><a href="#apartments" class="text-muted text-decoration-none">Appartements</a></li>
+                        <li><a href="#services" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="text-muted">Location meublée</span></li>
+                        <li><span class="text-muted">Conciergerie</span></li>
+                        <li><span class="text-muted">Maintenance 24/7</span></li>
+                        <li><span class="text-muted">Assurance incluse</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="text-muted">Recevez nos dernières offres</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2025 LuxApart. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Mentions légales</a>
+                    <a href="#" class="text-muted text-decoration-none">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Réservation d'appartement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="apartment-summary mb-4">
+                            <h6>Résumé de votre réservation</h6>
+                            <div class="summary-card">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <h6 id="selectedApartment">Appartement sélectionné</h6>
+                                        <p class="text-muted mb-0">Location mensuelle</p>
+                                    </div>
+                                    <div class="col-md-4 text-end">
+                                        <span class="h5 text-primary" id="selectedPrice">€/mois</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Date d'entrée</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Durée (mois)</label>
+                                <select class="form-select" required>
+                                    <option value="">Sélectionnez...</option>
+                                    <option value="1">1 mois</option>
+                                    <option value="3">3 mois</option>
+                                    <option value="6">6 mois</option>
+                                    <option value="12">12 mois</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message (optionnel)</label>
+                                <textarea class="form-control" rows="3" placeholder="Dites-nous en plus sur vos besoins..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary" onclick="submitBooking()">
+                        <i class="bi bi-check-lg me-2"></i>Confirmer la réservation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Galerie photos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carouselInner">
+                            <!-- Images will be inserted here by JavaScript -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
