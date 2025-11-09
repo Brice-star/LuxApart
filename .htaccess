@@ -1,0 +1,55 @@
+# .htaccess pour La Maison Du Royaume
+# Optimisation SEO et Performance
+
+# Forcer HTTPS (décommenter si vous avez SSL)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirection www vers non-www (ou inverse selon préférence)
+# RewriteCond %{HTTP_HOST} ^www\.lamaisonduroyaume\.com [NC]
+# RewriteRule ^(.*)$ https://lamaisonduroyaume.com/$1 [L,R=301]
+
+# Compression GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache du navigateur
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    
+    # CSS et JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Sécurité
+<IfModule mod_headers.c>
+    # Protection XSS
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prévention du clickjacking
+    Header always append X-Frame-Options SAMEORIGIN
+    
+    # MIME type sniffing
+    Header set X-Content-Type-Options nosniff
+</IfModule>
+
+# Page d'erreur personnalisée
+ErrorDocument 404 /index.html

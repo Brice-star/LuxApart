@@ -1,0 +1,13 @@
+# Robots.txt pour La Maison Du Royaume
+# Permet aux moteurs de recherche d'indexer tout le site
+
+User-agent: *
+Allow: /
+Disallow: /script.js
+Disallow: /styles.css
+
+# Sitemap
+Sitemap: https://lamaisonduroyaume.com/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
